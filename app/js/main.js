@@ -2,7 +2,8 @@ $(document).ready(function(){
 
 	
 	//подключаем слайдер owl-carousel
-	$(".slider").owlCarousel({
+	var owl1 = $(".slider");
+	owl1.owlCarousel({
 		items: 1,
 		loop:true,
 		navText: ['', ''],
@@ -14,7 +15,23 @@ $(document).ready(function(){
 		$(this).html("<span></span>");
 	})
 
+	var owl = $(".sites__list");
+	owl.owlCarousel({
+		items: 2,
+		loop:true,
+		navText: ['', ''],
+		autoplay: true,
+		autoplayTimeout: 10000
+	})
 
+	owl.owlCarousel();
+	$('.switch__button_right').click(function() {
+		owl.trigger('next.owl.carousel');
+	})
+	$('.switch__button_left').click(function() {
+		owl.trigger('prev.owl.carousel');
+	})
+	
 
 
 	$(".slider_image").each(function(){
