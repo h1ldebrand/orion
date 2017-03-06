@@ -19,6 +19,7 @@ ul
 
 body
 	font-family: "OpenSans", sans-serif
+	line-height: 1.6
 	
 
 /*-------- header ---------*/
@@ -374,6 +375,8 @@ body
 	height: 15px
 
 
+/*----------- section .works ------------*/
+
 .works
 	background-color: $section-color
 
@@ -394,7 +397,6 @@ body
 	font-size: 14px
 
 .sites-link
-
 	display: block
 	width: 350px
 	height: 220px
@@ -443,3 +445,144 @@ body
 	background-position: top right
 	&:hover
 		background-position: bottom right
+
+
+/*----------- section .testimonials ------------*/
+
+.testimonials-container
+	@extend %container
+	padding: 65px 0 50px
+
+.comments-wrap
+	margin-top: 60px
+	overflow: hidden
+
+.comment
+	text-align: center
+
+.comment__img, .comment__text
+	display: inline-block
+	vertical-align: top
+	margin: 0 17px
+
+.comment__img
+	width: 80px
+	height: 80px
+	margin-top: 10px
+	+border-radius(50%)
+	// overflow: hidden
+	background-position: top center
+	background-repeat: no-repeat
+
+
+.comment__text
+	width: 480px
+	border: 2px solid #e0e0e0
+	padding: 25px
+	text-align: left
+	+border-radius(6px)
+	position: relative
+	&:before
+		content: ""
+		display: block
+		width: 18px
+		height: 17px
+		background-image: url("../img/corner.jpg")
+		background-repeat: no-repeat
+		position: absolute
+		left: -18px
+		top: 50px
+
+.comment__name
+	margin: 0
+	font-family: "Montserrat", sans-serif
+	color: #111
+	font-size: 18px
+	margin-bottom: 15px
+	span
+		font-size: 12px
+
+.comment__speech
+	color: #959595
+	font-size: 15px
+
+/*----------- section .team ------------*/
+
+.team-container
+	@extend %container
+	padding: 45px 0 50px
+
+.specialists-wrap
+	text-align: justify
+	margin-top: 65px
+	&:after
+		content: ""
+		display: inline-block
+		width: 100%
+		height: 0
+
+
+.specialist
+	display: inline-block
+	width: 200px
+	text-align: center
+
+.specialist__photo
+	width: 125px
+	height: 125px
+	+border-radius(50%)
+	background-repeat: no-repeat
+	background-position: top center
+	position: relative
+	margin: auto
+
+.specialist__number
+	width: 45px
+	height: 45px
+	font-family: "Montserrat", sans-serif
+	font-weight: bold
+	line-height: 35px
+	background-color: #3498db
+	color: #fff
+	+border-radius(50%)
+	border: 5px solid #fff
+	text-align: center
+	font-size: 18px
+	position: absolute
+	top: 44px
+	left: -15px
+
+.specialist__name
+	font-size: 19px
+	font-family: "Montserrat", sans-serif
+	color: #363636
+
+.specialist__profession
+	font-size: 12px
+	color: #b7b7b7
+
+.specialist__social-item
+	display: inline-block
+	margin: 0 5px
+
+.specialist__social-link
+	display: block
+	width: 33px
+	height: 30px
+	background-image: url("../img/social_icons.png")
+	background-repeat: no-repeat
+
+.specialist__social-link_facebook
+	background-position: top left
+
+.specialist__social-link_twitter
+	background-position: top center
+
+.specialist__social-link_dribbble
+	background-position: top right
+
+
+
+.map__view
+	width: 100%
+	height: 455px

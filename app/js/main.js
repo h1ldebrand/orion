@@ -15,22 +15,28 @@ $(document).ready(function(){
 		$(this).html("<span></span>");
 	})
 
-	var owl = $(".sites__list");
-	owl.owlCarousel({
+	var owl2 = $(".sites__list");
+	owl2.owlCarousel({
 		items: 2,
 		loop:true,
 		navText: ['', ''],
-		autoplay: true,
-		autoplayTimeout: 10000
 	})
 
-	owl.owlCarousel();
 	$('.switch__button_right').click(function() {
-		owl.trigger('next.owl.carousel');
+		owl2.trigger('next.owl.carousel');
 	})
 	$('.switch__button_left').click(function() {
-		owl.trigger('prev.owl.carousel');
+		owl2.trigger('prev.owl.carousel');
 	})
+
+		var owl3 = $(".comments-wrap");
+		owl3.owlCarousel({
+			items: 1,
+			loop:true,
+			navText: ['', ''],
+			autoplay: true,
+			autoplayTimeout: 10000
+		})
 	
 
 
@@ -86,10 +92,6 @@ $(document).ready(function(){
 			var scaleLineHeight = lastTop - firstTop + lastHeight + ($(".operation").length + 1) * 25;
 			
 			$(".scale__line").height(scaleLineHeight)
-			console.log(lastTop);
-			console.log(firstTop);
-			console.log(lastHeight);
-			console.log(scaleLineHeight);
 		}
 		
 	});
