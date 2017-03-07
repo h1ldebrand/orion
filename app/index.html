@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<!-- endbuild -->
-
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 
@@ -298,8 +298,26 @@
 		</div>
 	</section>
 	<section class="contact">
-		<div class="map">
-			<iframe class="map__view" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5092.03275980719!2d26.291824639507183!3d47.462435616786586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1488814317264" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<div id="map"></div>
+	</section>
+	<section class="our-partners">
+		<div class="our-partners-container">
+			<div class="partner">
+				<ul class="partner__list">
+					<li class="partner__item">
+						<img src="img/logo-nasa.png" alt="" class="partner__logo">
+					</li>
+					<li class="partner__item">
+						<img src="img/logo-jaxa.png" alt="" class="partner__logo">
+					</li>
+					<li class="partner__item">
+						<img src="img/logo-boeing.png" alt="" class="partner__logo">
+					</li>
+					<li class="partner__item">
+						<img src="img/logo-cnn.png" alt="" class="partner__logo">
+					</li>
+				</ul>
+		</div>
 		</div>
 	</section>
 		<!-- build:js js/libs.js -->
@@ -310,5 +328,7 @@
 	<!-- build:js js/main.js -->
 	<script src="js/main.js"></script>
 	<!-- endbuild -->
+	<script src="js/google-map.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDkatyKu49O76Aao49SWVRIiIdInaepvEs&callback=initMap" async defer></script>
 </body>
 </html>
