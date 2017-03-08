@@ -40,7 +40,7 @@ $(document).ready(function(){
 	
 
 
-	$(".slider_image").each(function(){
+	$(".slider__image").each(function(){
 		var that = $(this);
 		var sliderWidth = that.closest(".slider").css("width");
 		var sliderHeight = that.closest(".slider").css("height");
@@ -49,7 +49,7 @@ $(document).ready(function(){
 	})
 
 	
-	
+	// section 3 
 	$(".operation").each(function(e){
 
 		var that = $(this);

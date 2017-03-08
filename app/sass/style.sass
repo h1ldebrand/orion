@@ -1,7 +1,5 @@
 @import "mixins"
 
-$main-color: #88929d
-$three-color: #363636
 $section-color: #e7eef6
 
 %container
@@ -176,7 +174,7 @@ body
 .owl-item
 	display: inline-block
 			
-.slider_image
+.slider__image
 	width: 100%
 	height: 100%
 	background-size: cover
@@ -257,7 +255,7 @@ body
 .service-item__description
 	margin: 23px 0 0
 	font-size: 14px
-	color: $main-color
+	color: #88929d
 	line-height: 1.6
 
 
@@ -470,7 +468,6 @@ body
 	height: 80px
 	margin-top: 10px
 	+border-radius(50%)
-	// overflow: hidden
 	background-position: top center
 	background-repeat: no-repeat
 
@@ -623,3 +620,95 @@ body
 	vertical-align: middle
 	width: 1000px
 	text-align: center
+
+.partner__logo
+	max-height: 65px
+
+
+/*----------- footer -------------*/
+
+.footer
+	background-color: #000
+
+.footer-container
+	@extend %container
+	padding: 35px 0
+
+.footer-content
+	&:after
+		@extend %clearfix
+
+.sites-menu
+	font-size: 0
+	float: left
+
+.sites-menu__wrap
+	font-size: 14px
+	display: inline-block
+	vertical-align: top
+	color: #d7d7d7
+	width: 135px
+	margin-right: 5px
+	
+
+.sites-menu__title, .subscribe__caption
+	text-transform: uppercase
+	font-weight: bold
+	margin-bottom: 3px
+
+.sites-menu__link
+	color: #d7d7d7
+	text-decoration: none
+
+.subscribe
+	float: right
+	color: #d7d7d7
+	font-size: 14px
+
+.subscribe__form
+	margin-bottom: 20px
+
+.subscribe__useremail, .subscribe__button
+	height: 38px
+	color: #d7d7d7
+	border: none
+	outline: none
+
+
+.subscribe__useremail
+	width: 300px
+	background-color: #363636
+	text-indent: 25px
+
+.subscribe__button
+	text-transform: uppercase
+	padding: 0 10px
+	font-weight: bold
+	margin-left: -4px
+	background-color: #555
+
+
+
+.subscribe__useremail::-webkit-input-placeholder
+  color: #5c5c5c
+
+.subscribe__useremail::-moz-placeholder 
+  color: #5c5c5c
+
+.subscribe__useremail:-ms-input-placeholder
+  color: #5c5c5c
+
+.subscribe__useremail:-moz-placeholder
+  color: #5c5c5c
+
+.copyright, .for-people
+	text-align: right
+	font-size: 14px
+	color: #535353
+
+.copyright
+	margin-bottom: 5px
+
+
+
+
